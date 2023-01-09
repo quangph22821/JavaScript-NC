@@ -18,20 +18,20 @@ const restaurant ={
             close :24,
         },
     },
-    order: function(starIndex, mainIndex){
-        return[this.categories[starIndex],this.menu[mainIndex]];
-    },
+    // order: function(starIndex, mainIndex){
+    //     return[this.categories[starIndex],this.menu[mainIndex]];
+    // },
 
-    oderDelivery: function({starIndex,mainIndex,time,address}){
-        console.log(`Tôi oder ${this.categories[starIndex]} và 
-        ${this.menu[mainIndex]} tại ${address} lúc ${time}
-        `);
-    },
+    // oderDelivery: function({starIndex,mainIndex,time,address}){
+    //     console.log(`Tôi oder ${this.categories[starIndex]} và 
+    //     ${this.menu[mainIndex]} tại ${address} lúc ${time}
+    //     `);
+    // },
     
-    oderChiken: function(mainIngredient,...otherIngredient){
-        console.log(mainIngredient);
-        console.log(otherIngredient);
-    }
+    // oderChiken: function(mainIngredient,...otherIngredient){
+    //     console.log(mainIngredient);
+    //     console.log(otherIngredient);
+    // }
     
 };
 
@@ -82,11 +82,37 @@ const restaurant ={
 // }
 
 // restaurant.oderChiken && restaurant.oderChiken('Fanta','CoCa','Sprite');
+/////////////////////////////////////////////////////////
+// restaurant.numGuests = 0;
+// const guests2 = restaurant.numGuests || 15;
+// console.log(guests2);
 
-restaurant.numGuests = 0;
-const guests2 = restaurant.numGuests || 15;
-console.log(guests2);
+// // Toán tử kết hợp : null and undefined (k nhận 0 và chuỗi rỗng)
+// const guestCorrect = restaurant.numGuests ?? 0;
+// console.log(guestCorrect);
 
-// Toán tử kết hợp : null and undefined (k nhận 0 và chuỗi rỗng)
-const guestCorrect = restaurant.numGuests ?? 0;
-console.log(guestCorrect);
+// Toán tử logic gán 1 biến cho 1 biến
+// nếu sai sẽ hiện giá trị gán
+
+const rest1 = {
+    name : 'Ha Nam',
+    numGest : 0,
+}
+
+const rest2 = {
+    name : 'Ha Noi',
+    owner : 'Le Ho',
+}
+
+// rest1.numGest ||= 10;
+// rest2.numGest ||= 10;
+
+rest1.numGest ??= 10;
+rest2.numGest ??= 10;
+// rest2.owner = rest2.owner && '<QUANG>';
+
+rest1.owner &&='QUANG';
+rest2.owner &&='QUANG';
+
+console.log(rest1);
+console.log(rest2);

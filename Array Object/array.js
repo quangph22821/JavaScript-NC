@@ -13,6 +13,8 @@ const restaurant ={
     }
 };
 
+
+
 // let [main, secondary] = restaurant.categories;
 // console.log(main, secondary);
 
@@ -21,9 +23,9 @@ const restaurant ={
 
 // // nhận 2 giá trị trả về từ 1 hàm
 
-// // console.log(restaurant.order(2,0));
-// const [starter, mainCourse] = restaurant.order(2, 0);
-// console.log(starter,mainCourse);
+// console.log(restaurant.order(2,0));
+const [starter, mainCourse] = restaurant.order(2, 0);
+console.log(starter,mainCourse);
 
 // //mảng lồng nhau 
 // const nested = [2,3,[5,6]];
