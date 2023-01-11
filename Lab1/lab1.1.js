@@ -35,9 +35,9 @@ const game = {
     scored :['Haaland','Kevin De Bruyne','Foden','Mahrez'],
     date : 'Dec 9th, 2030',
     odds:{
-        team1:1.33,
-        x:3.25,
-        team2:6.5,
+        team1:1.5,
+        x:3.15,
+        team2:6,
     },
 };
 
