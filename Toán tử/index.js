@@ -107,8 +107,8 @@ const rest2 = {
 // rest1.numGest ||= 10;
 // rest2.numGest ||= 10;
 
-rest1.numGest ??= 10;
-rest2.numGest ??= 10;
+// rest1.numGest ??= 10;
+// rest2.numGest ??= 10;
 // rest2.owner = rest2.owner && '<QUANG>';
 
 rest1.owner &&='QUANG';
