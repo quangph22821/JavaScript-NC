@@ -54,5 +54,50 @@ const tranformer = function(str, fn){
 
 tranformer('JavaScripts là ngôn ngữ tốt',upper);
 
+//gọi lại hàm mọi lúc
+
+const hight5 = function(){
+    console.log('Quang');
+};
+document.body.addEventListener('click',hight5);
+
+['1','2','3'].forEach(hight5);
+
+//Hàm trả về hàm//
+const greet = function(greeting){
+    return function(name){
+        console.log(`${greeting} ${name}`);
+    };
+};
+
+const greetHey = greet('Hey');
+greetHey('Quang');
+greetHey('Tèo');
+
+greet ('Quang')('Tèo');
+
+//Changllenge
+const greetArr = greeting => name =>console.log(`${greeting} ${name}`);
+greetArr ('Hi')('Tèo');
+
+
+
+
+//Biểu thức hàm
+const run = function(){
+    console.log('Tôi thi chạy');
+}
+run();
+
+(function(){
+    console.log('Tôi thi chạy');
+}) ();
+
+
+
+
+
+
+
 
 
